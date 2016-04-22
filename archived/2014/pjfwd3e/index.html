@@ -1,0 +1,1393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Professional JavaScript For Web Developers 3rd Edition 读书笔记</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="../wp-content/themes/simple/style.css"  />
+<!--[if lt IE 9]>
+<script src="../wp-content/themes/simple/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script language="javascript" type="text/javascript" src="../wp-content/themes/simple/js/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="../wp-content/themes/simple/js/backstretch.js"></script>
+<script language="javascript" type="text/javascript" src="../wp-content/themes/simple/js/slimbox2.js"></script>
+<script language="javascript" type="text/javascript" src="../wp-content/themes/simple/js/tip.js"></script>
+<script language="javascript" type="text/javascript" src="../wp-content/themes/simple/js/application.js"></script>
+<link rel="alternate" type="application/rss+xml" title="Sune &raquo; Professional JavaScript For Web Developers 3rd Edition 读书笔记 Comments Feed" href="../pjfwd3e/feed/" />
+<link rel='prev' title='对熊样人生的小感悟' href='./little-understanding-of-the-sune-of-life/' />
+<link rel='next' title='光阴不停地飞逝，总结2013计划2014' href='./sum2013hi2014/' />
+<meta name="generator" content="WordPress 3.9.2 - really-static 0.5" />
+<link rel='canonical' href='./pjfwd3e/' />
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head><body>
+<div class="clear_bg"></div>
+<div class="body-inner">
+ 
+<!-- ====s lefter==== -->
+
+<div id="header">
+
+<header id="blog_title">
+
+<div class="logo">
+
+<img src="../wp-content/themes/simple/images/logo.png" alt="sune"  id="logo" />
+
+<img src="../wp-content/themes/simple/images/logo2.png" alt="sune"  id="logo2"  class="rotate-360" style="opacity:0" />
+
+</div>
+
+<h1><span class="name">SUNE</span></h1>
+
+</header>
+
+<nav id="menu">
+
+<ul class="header-nav">
+
+<li><a title="Home" href="../">首页</a></li>
+
+<li><a href="../resume/"  target="_blank" >简历</a></li>
+
+<li class="page_item page-item-2"><a href="../about/">关于</a></li>
+</ul>
+
+</nav>
+
+<!-- <form action="/search" class="head-search" method="get">
+
+<input id="search-input" type="text" name="s" class="inputbox" value="搜索..." onfocus="if (value =='搜索...'){value =''}" onblur="if (value ==''){value='搜索...'}" x-webkit-speech lang="zh-CN" />
+
+</form> -->
+
+<div class="clear"></div>
+
+</div>
+
+<div id="wrap">
+
+<!-- ====e lefter==== --><!-- ====e mian==== -->
+<div id="timeline" class="horizontal"></div>
+<section id="content" class="post_content" >
+<div class="post_item">
+<div class="post">
+<article>
+<header>
+<h2><a href="../pjfwd3e/" title="Professional JavaScript For Web Developers 3rd Edition 读书笔记">Professional JavaScript For Web Developers 3rd Edition 读书笔记</a></h2>
+</header>
+<div class="con">
+  
+<p><a href="../wp-content/uploads/2013/08/swdd5f4g5dsfg.jpg"><img src="../wp-content/uploads/2013/08/swdd5f4g5dsfg.jpg" alt="文章封面图" width="700" height="509" class="alignnone size-full wp-image-374" /></a></p>
+<p>可能在看这本书之前，在各大社区看到对这本书的各种好评，于是打算在看这本书的时候写写记录。整本书前十五章看得非常认真也学到了很多东西，后十章没有耐心去看了，就草草看了几眼。不过个人认为前十五章很重要，后十章讲了很多api与新的东西，大可不必牢记它们，只需了解即可，正真用的时候凭借自己的印象去查api文档即可。这本书整体不错，不过对于中国人的第一本入门书籍算难的，所以在看这本书之前还需要有<span class="u tip" title="js是基于对象的解释类语言，在客户端运行，主要应用与web。有BOM、DOM、ECMAScript三部分组成，其速度比C语言慢5000倍">javascript</span>的基础知识。</p>
+<h1>个人认为重要的地方</h1>
+<pre class="brush: css; title: ; notranslate" title="">
+
+/*
+
+1.基本概念
+
+javaScript 区分大小写，函数名不能为“关键字（keyword）”。
+
+&lt;script&gt;标签引入外部文件后，就不能在标签中插入代码，因为会被忽略。
+
+**/
+
+
+
+
+
+/*
+
+2.标识符（identifier）
+
+“标识符”是指变量、函数、属性的名字，或者是函数的参数，开头必须为字母、_、$，采用驼峰法写格式。
+
+标识符不能单独出现这些保留字：implements,interface,let,package,private,public,static,yield
+
+标识符不能单独出现这些关键字：break,case,catch,continue,default,delete,do,else,finally,for,function,if,in,instanceof,new,return,switch,this,throw,try,typeof,var,void,while,with
+
+**/
+
+
+
+
+
+
+
+/*
+
+3. 严格模式（strict mode）
+
+&quot;use strict&quot;;
+
+如果在语法检测时发现语法问题，则整个代码块失效，并导致一个语法异常。
+
+如果在运行期出现了违反严格模式的代码，则抛出执行异常。
+
+**/
+
+
+
+
+
+
+
+/*
+
+4.变量（variable）
+
+javascript的变量是一种松散的变量，可以保存任何类型的数据。
+
+用var操作符（关键字），加上变量名（标识符）。
+
+var name = &quot;sune&quot;;
+
+在函数里面定义的变量，叫做“局部变量（local variable）”，函数退出后就会被销毁，如果省略var操作符会是变量变成全局的，不过不建议这样。
+
+定义多个变量时，在变量名之间用逗号隔开，JS多少表并列关系时都是用逗号隔开。
+
+**/
+
+
+
+
+
+/*
+
+5.数据类型（data type）
+
+underfined：没有申明、初始化变量，那么变量的值就是underfined，使用typeof函数返回数据类型。
+
+null：表示一个空对象的指针，会返回object，定义null值就是表明未知。
+
+boolean：只有两个值true与false，使用Boolean()可以转换数据类型。
+
+number：0开头为八进制，0x开头为十六进制，n/a为 not applicable 意思是“不适用”，不要测试某个特效浮点的值，浮点最高进度为17位，
+
+        NaN为 not a number 是一个特殊的数值，表示本来要返回数值的操作却没有返回数值，这样会防止抛出错误，使用isNaN()函数检测。
+
+        parseInt()函数可解析一个字符串，并返回一个整数parseInt(&quot;1f&quot;,16);返回 31 (16+15)。
+
+string：包含在引号中的unicode字符，字符字变量：\n换行  \t制表  \b空格 \r回车 \f进纸  \\斜杠  \'单引号  \&quot;双引号  
+
+object：一组数据和功能的集合，var name = new object(); 其他所有类型的object继承了基本的行为
+
+**/
+
+
+
+
+
+/*
+
+6.操作符（operator）
+
+unary：只能操作一个值，包括递增，递减，加减操作。
+
+bitwise：按位与，按位或，按位异或，求反，左移，逻辑右移，算术右移（要考虑符号）。
+
+boolean：not(!),and(&amp;&amp;),or(||)，在与、或时有多个操作数。
+
+multiplicative：multiply(*), divide(/), modulus(%)。
+
+additive：add(+)，当两个操作数有一个是字符串时，结果为字符串。subtract(-)，操作数中若有一个是字符串，则转换成数字，如果失败结果为NaN。
+
+relational：less-than (&lt;), greater-than (&gt;), less-than-or-equal-to (&lt;=), and greater-than-or-equal-to (&gt;=)。
+
+equality：equal(==),not equel(!=)，identically equal(===),not identically equal(!==)。
+
+conditional：variable = boolean_expression ? true_value : false_valuea 三元。
+
+assignment；multiply/assign (*=),add/assign (+=)。
+
+comma：var num1=1, num2=2, num3=3;。
+
+**/
+
+
+
+
+
+/*
+
+7.语句（statement）
+
+if：if (condition) statement1 else statement2;
+
+do-while:do {statement} while (expression)至少执行一次;
+
+while：while(expression) statement;
+
+for：for (initialization; expression; post-loop-expression) statement;
+
+for-in：for (property in expression) statement; for (var propName in window) {document.write(propName);}
+
+
+
+label：label: statement;
+
+break and continue：两个都是立刻退出循环，但是continue退出后会继续执行表达式为其他值的循环，continue只会退出内部循环;
+
+with：with (expression) statement,expression为对象名，在语句的变量赋值中就可以省略掉对象节点;
+
+switch：switch (expression) {case value: statement break; case value: statement break; default: statement};
+
+**/
+
+
+
+
+
+/*
+
+8.函数（function）
+
+function functionName(arg0, arg1,...,argN) {
+
+statements
+
+}  函数格式很简单，难点在于函数里面的语句。javascript没有函数签名的特性，所以不能重载（overloading）
+
+
+
+**/
+
+
+
+
+
+/*
+
+9.基本类型与引用类型的值（primitive and reference values）
+
+对象为引用类型，在参数中都是为基本类型。
+
+检查类型：typeof 返回类型，判断基本类型；variable instanceof constructor 返回真假，constructor 表示类型，判断引用类型。
+
+**/
+
+
+
+
+
+/*
+
+10.作用域（score）
+
+·所有在最外层定义（非函数体内定义）的变量都拥有全局作用域。
+
+·所有末定义直接赋值的变量，系统会自动声明为拥有全局作用域的变量。
+
+·所有window对象的属性拥有全局作用域。
+
+javascript没有块级作用域。函数中声明的所有变量，不论是在哪里声明的，在整个函数中他们都是定义的。
+
+**/
+
+
+
+/*
+
+11.引用类型（reference type）
+
+其实在某种意义上面是可以叫类的，但是不具备传统类的一些方法，但是js有自己的实现方法，可以完全实现类的功能
+
+object：var obj=new Object();    //object 可以说是其他应用类型的父级，从原型链来讲
+
+obj.name=&quot;ted&quot;;  
+
+obj.age=21; 
+
+var obj={   //对象字面量的方式，这也是官方推荐的方式，因为它更有封装的味道。
+
+    name:&quot;ted&quot;,  
+
+    age:23  
+
+}
+
+var obj={};   //只是这样改写后，将只会具有默认属性了。
+
+obj.name=&quot;ted&quot;;  
+
+obj.age=23;  
+
+
+
+array:var array=new Array();  var array=[&quot;test&quot;,&quot;love&quot;]  length  isArray() toString()多用在字符串   valueOf()多用在数值 push() pop() unshift()  shift() 栈方法LIFO 队列方法FIFO   reverse() sort() concat() slice() splice() indexOf() lastIndexOf() every() filter() forEach() map()  reduce()  
+
+
+
+date:Date() getDate() getDay() getMonth() getFullYear() getHours() getMinutes() getSeconds() getMilliseconds() 
+
+
+
+RegExp:正则  var expression = /pattern/flags;  var reCat = new RegExp(&quot;cat&quot;);
+
+
+
+Function: var sdf = function()函数表达式  function dfs(){} 函数声明
+
+
+
+基本包装类型：把boolean、number、string三种基本数据类型转换成了引用类型。
+
+
+
+内置对象：global  encodeURI() encodeURIComponent() eval()  和  math  min() max() ceil() floor() round() random() abs() log() 
+
+
+
+**/
+
+
+
+/*
+
+12.创建自定义类型（创建对象）
+
+工厂模式：实例化对象，用工厂方法代替new操作 var person = new Object(); person.name = “Nicholas”;
+
+
+
+构造函数模式：第一个字母大写，没有rutuen语句，直接将属性或者方法赋给this对象。
+
+其实构造函数就是普通的函数，只是在函数前加一个new操作符就可以创建一个对象了，如果不用new那么在使用时属性与方法会被添加给window。
+
+在多个实例用公用方法时会造成重复。
+
+
+
+原型模式：其实原型模式也是通过调用构造函数而去创建那个对象的原型对象，在创建任何函数的时候，都会有prototype属性，该属性还会自动获取一个constructor属性，isPrototypeOf()检测实例是否有指针，有则返回true。在原型实例获取属性是，先去访问实例时候含有属性，然后再去访问原型。hasOwnProperty()方法判断属性存在实例还是原型。原型具有动态性，因为在实例中没有找到的话就会访问原型。但在重写整个原型后就会出错，调用构造函数时会为实例添加一个指向最初原型的__proto__指针，
+
+
+
+组合模式：结构构造函数与原型的优点，方法与共享属性用原型。
+
+
+
+动态原型模式：使用if判断语句添加原型方法，如果存在则不添加
+
+
+
+寄生构造函数模式：一般不建议使用
+
+
+
+稳妥构造函数模式：安全性高
+
+**/
+
+
+
+/*
+
+13.继承（inheritance）
+
+js中只支持“实现继承”，不能实现“接口继承”。每一个对象都会包含constructor属性，模式是指向生成它的“类”，在实例中prototype变成__proto__。
+
+也就说prototype是一种属性，而__proto__只是一种指针。
+
+
+
+原型链继承：原型之间的指向联系，实例--&gt;原型对象--&gt;object超类  SonType.prototype = new FatherType(); 这样子类的原型就变成了父类的原型。在实际使用中很少会去单独用原型链继承，因为原型链不能向超类型的构造函数传递参数，并且原型中含有引用类型的值时，更改会影响实例
+
+
+
+借用构造函数继承：function SubType(){ SuperType.call(this);} call里面可以填写传递的参数。这样方式因为方法都在构造函数中定义，所以就没有函数复用可言。
+
+
+
+组合继承：有时候也叫为经典继承，把以上另种方式是结合。原型链用来继承原型的方法与属性，借用构造函数来实现实例属性的继承。
+
+
+
+原型式继承：function object(o){  function F(){}  F.prototype = o;  return new F(); },表示不懂。
+
+
+
+寄生式继承：创建一个仅用于封装继承过程的函数，该函数在内部以某种方式来增强对象，最后再像真的是他做了所有工作一样返回对象。
+
+
+
+寄生组合式继承：......好像和组合继承类似的
+
+
+
+**/
+
+
+
+/*
+
+14.函数表达式（function anonymous）
+
+匿名函数：在function方法中面没有标识符，定义要在执行之前， 而普通的函数定义则不需要这样。
+
+
+
+递归：函数调用自身，常使用arguments.callee()方法
+
+
+
+闭包：闭包就是能够读取其他函数内部变量的函数。由于在Javascript语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。  //先跳过，回头再来理解......
+
+
+
+块级作用域：任何一对花括号（｛和｝）中的语句集都属于一个块，在这之中定义的所有变量在代码块外都是不可见的，我们称之为块级作用域。在块级外面可以重新声明变量来模拟块级作用域。 
+
+
+
+私有变量：在js中没有私有成员的概念，但函数中定义的变量可以认识为是私有变量。在把私有变量变成共有变量的方法叫做特权方法。
+
+
+
+**/
+
+
+
+
+
+/*
+
+15.浏览器对象模型（BOM）
+
+1.window对象：这个就是一些专家在ECMA中说的global对象，常用方法有open()，以及一些窗口操作，一些onload事件，对话框等，具体可以在手册中参考。bom中其他对象都是window对象的一部分，window可以省略掉
+
+2.location对象：当前窗口的文档部分信息，它含有window与document的部分属性，特点是可以获取地址，host返回服务器名与端口号，href返回完整的URL，search返回参数，如：?name=sune&amp;age=19。每次修改location都会重载页面，除了hash属性外。replace()方法跳转不会产生历史记录。
+
+3.navigator对象：包含浏览器有关的信息，每个浏览器都不同，具体使用时参考手册。
+
+4.screen对象：包含有关客户端显示屏幕的信息，具体使用时参考手册。
+
+5.history对象：history.go(-1)后退一页，hostory.go('sune.yileit.com'),可以用back()与forward()代替后退前进。
+
+
+
+**/
+
+
+
+
+
+
+
+/*
+
+16.客户端检测（Client Detection）
+
+一般情况下不需要使用客户端检测，如果要检测那么就使用最合适的方法。
+
+
+
+1.能力检测：不检测浏览器为什么，只检测浏览器的能力，当然多个特性时最好一起检测，这样可以节约时间。
+
+function getElement(id){
+
+if (document.getElementById){
+
+return document.getElementById(id);
+
+} else if (document.all){
+
+return document.all[id];
+
+} else {
+
+throw new Error(“No way to retrieve element!”);
+
+}
+
+}
+
+2.怪癖检测：也就是检测浏览器的bug。
+
+3.用户代理检测：这是最后才使用的一直方法，一般是在服务端来进行检测的，参见js.alixixi.com/a/2010091464636.shtml
+
+
+
+**/
+
+
+
+
+
+
+
+/*
+
+17.文档对象模型（DOM）
+
+它是针对xml与html的api，它描绘了一个层次的节点树。每一个节点都有自己的属性，如nodeName，nodeValue，各个节点之间为同级或者父子的关系，document也是一个节点，html为它的子节点。document下面的属性方法比较多，具体的使用时看手册。
+
+querySelector(),querySelectorAll(),matchesSelector();classList属性；dataset属性；
+
+dom2与dom3里面有很多api，这些用的时候再去找
+
+**/
+
+
+
+/*
+
+18.事件（event）
+
+事件流：冒泡流（ie上使用）从深至浅，捕获流从浅至深，dom流先执行捕获流再执行冒泡流。
+
+时间侦听器（handler）：
+
+html事件处理程序在html标签中写入指定事件
+
+&lt;input type=”button” value=”Click Me” onclick=”try{showMessage();}catch(ex){}”&gt;
+
+
+
+dom0事件处理
+
+var btn = document.getElementById(“myBtn”);
+
+btn.onclick = function(){
+
+alert(“Clicked”);
+
+};
+
+
+
+dom2事件处理
+
+var btn = document.getElementById(“myBtn”);
+
+btn.addEventListener(“click”, function(){
+
+alert(this.id);
+
+}, false);
+
+
+
+
+
+ie事件处理
+
+var btn = document.getElementById(“myBtn”);
+
+var handler = function(){
+
+alert(“Clicked”);
+
+};
+
+btn.attachEvent(“onclick”, handler);
+
+//other code here
+
+btn.detachEvent(“onclick”, handler);
+
+
+
+
+
+跨浏览器事件处理
+
+var EventUtil = {
+
+addHandler: function(element, type, handler){
+
+if (element.addEventListener){
+
+element.addEventListener(type, handler, false);
+
+} else if (element.attachEvent){
+
+element.attachEvent(“on” + type, handler);
+
+} else {
+
+element[“on” + type] = handler;
+
+}
+
+},
+
+removeHandler: function(element, type, handler){
+
+if (element.removeEventListener){
+
+element.removeEventListener(type, handler, false);
+
+} else if (element.detachEvent){
+
+element.detachEvent(“on” + type, handler);
+
+} else {
+
+element[“on” + type] = null;
+
+}
+
+}
+
+};
+
+
+
+
+
+事件对象：触发某个事件时，就会产生event对象，type，target属性，preventDefault()，stopProtagation()
+
+事件类型：具体参考api
+
+
+
+**/
+
+
+
+/*
+
+18.表单处理
+
+常用的有数据处理，验证，放重复提交什么的，这个直接采用js库文件即可。
+
+**/
+
+</pre>
+<h1>不熟悉的单词</h1>
+<pre class="brush: css; title: ; notranslate" title="">
+
+前言与目录、简介、感谢、约定、面向人群等等
+
+Emerging  adj.（用作定语）新兴的   v.出现（ emerge的现在分词 ）；露头；形成；事实
+
+engaged  adj.（指厕所等）有人用的；已订婚的；（指电话）占线的；忙碌的v.与某人订婚；保证，约定；从事（ engage的过去式和过去分词）；吸引或引起（注意、兴趣等）
+
+philosophy n.哲学；哲学体系，哲学思想；生活信条；哲理
+
+juggling  v.欺骗，杂耍；歪曲（ juggle的现在分词 ）；耍弄；有效地组织；尽力同时应付（两个或两个以上的重要工作或活动）adj.欺骗的，欺诈的，变戏法（似）的
+
+acknowledgement n.承认，确认；致谢，鸣谢；收条；[法]承认书
+
+involved adj.复杂难懂的；与他人有密切关系的；受牵扯的；作为一部份参与的 v.表明（某人参与了罪行等）（involve的过去式和过去分词）；使参与；牵涉；使专心于
+
+grace  n.恩泽；优雅；慈悲；魅力v.使优美；惠赐
+
+opportunity n.机会；适当的时机良机；有利的环境，条件
+
+staff n.参谋；全体职员；（大、中、小学的）管理人员；权杖adj.行政工作的；参谋的；职员的；作为正式工作人员的vt.雇用；担任……的职员（或雇员）；为……配备工作人员；给（职员）下发学习（或工作）指令（通常与 out 连用）vi.雇用工作人员
+
+frequent  adj.频繁的，时常发生的，常见的；（脉搏等）急促的，快的vt.常到，光顾，常与…交往；常去，时常出入于
+
+draft n.汇票；草稿；选派；（尤指房间、烟囱、炉子等供暖系统中的）（小股）气流 vt.起草；制定；征募 vi.拟稿；绘样；作草图 adj.初步画出或（写出）的；（设计、草图、提纲或版本）正在起草中的，草拟的；以草稿形式的；草图的
+
+correction  n.修改；改[纠]正；惩罚；有待改正 adj.改正的，纠正的
+
+extremely adv.极端地；非常，很；去；绝
+
+but certainly not least  但并非最不重要的
+
+career  n.生涯；职业；事业；速度，全速 adj.作为毕生职业的 vi.全速前进，猛冲
+
+realization n.认识，领会；实现
+
+sprout out 突然出现
+
+reflect on  仔细想； 回忆；影响…的荣誉； 使丢脸
+
+dramatically  adv.戏剧性地，引人注目地
+
+affected adj.感动的；受到影响的；（人或行为）假装的；倾向于…的 v.影响（ affect的过去式和过去分词 ）；假装；感动；（疾病）侵袭
+
+decision  n.决定；果断；决议；（法院的）判决 vt.[口语][拳击]靠判定击败（对手）
+
+available adj.可用的；有空的；可会见的；（戏票、车票等）有效的
+
+relegate vt.使降级；使降职；转移；把…………归类
+
+buzzword n.（报刊等的）时髦术语，流行行话
+
+genuine adj.真正的；坦率的，真诚的；血统纯粹的，纯种的；[医学]真性的
+
+thoughtful adj.沉思的；体贴的；缜密思考过的，深思熟虑的
+
+flatter vt.奉承，阿谀；使满意，使高兴；（画像等的形象）美于（真人[实物]）n.[机]平面锤；压平机；扁平槽；敲平的人
+
+guru n.领袖；专家；权威；个人的宗教教师[指导]
+
+certainly adv.无疑地，确定地；当然地；必定；准
+
+introductory adj.引导的，介绍的，导言的；开端的；序
+
+claim vt.声称；断言；需要；索取 vi.提出要求 n.（根据权利而提出的）要求；声称；断言；索赔
+
+complex adj.复杂的；合成的 n.复杂；合成体；[数学]复数
+
+rely vi.依靠，倚赖，仗恃；信任，信赖
+
+oriented adj.导向的；以……为方向的；定向的；定方向
+
+originate vt.引起；创始，创作；开始，发生；发明 vi.起源于，来自；产生；起航；
+
+loosely adv.松散的，蓬松的；轻易，轻松地，随手地，随意地；大意，粗略地，不严格的；无力地，软绵绵地
+
+Instead adv.代替，顶替；反而；反倒
+
+enabling adj.有可能，或有条件完成的 v.使能够，提供做…的权利[措施]（ enable的现在分词 ）；使可能
+
+enhance vt.提高，增加；加强 现在分词：enhancing；过去式：enhanced；第三人称单数：enhances；过去分词：enhanced
+
+aim vt.&amp; vi.（以…）瞄准，针对 vi.努力；目的在于；以…为目标[目的] n.志向 vt.使针对；使旨在；致力于；把…用于（at） 现在分词：aiming；过去式：aimed；第三人称单数：aims；过去分词：aimed；复数：aims
+
+evolve vt.使发展；使进化；设计，制订出；发出，散发 vi.发展；[生]通过进化进程发展或发生
+
+component n.成分；零件；[数]要素；组分 adj.组成的；合成的；构成的；成分的
+
+structure n.结构；构造；建筑物；体系 vt.构成，排列；安排
+
+convention n.会议；全体与会者；国际公约；惯例，习俗，规矩
+
+stroke n.（游泳或划船的）划；中风；（打、击等的）一下；（成功的）举动 vt.（用笔等）画；轻抚；轻挪；敲击 vi.[体育]击球；[划船]作尾桨手，指挥划桨 vt.&amp; vi.（打字时）击打键盘
+
+sketch n.草图；素描；梗概 v.草拟；速写；简述
+
+persistence n.坚持不懈；执意；持续；留存，（萤光屏上余辉的）保留时间
+
+present adj.现在的；目前的；出席的；[语法学]现在时的 n.现在；礼物；瞄准 vt.介绍；出现；提出；赠送 vi.举枪瞄准
+
+emphasize vt.强调，着重；加强语气；使突出
+
+errata n.正误表，勘误表； 写错( erratum的名词复数 )； 排错； 错误； 错字勘误表
+
+occur vi.发生；出现；闪现
+
+snippet n.小片，片段；不知天高地厚的年轻人
+
+
+
+第一章 什么是javascript
+
+purpose n.意志；目的；作用；（进行中的）行动 vt.有意；打算；企图（做）；决意（做）
+
+validation n.确认
+
+invalid  adj.无效的；不能成立的；有病的；病人用的vt.使伤残；使退役；失去健康n.病人，病号；残废者；伤病军人vi.变得病弱；因病而奉命退役
+
+major adj.主要的；重要的；大调的；主修的（课程）n.主修科目；大调；陆军少校；成年的vi.&lt;美&gt;主修，专攻；[美国英语][教育学]主修（in）；专攻
+
+bound vi.跳，弹跳；限制；接壤vt.给…划界，限制；使弹回，使跳跃；束缚n.界限，限制；跃起；（球等的）反跳adj.用带子绑住的；有义务的；装订的，有封面的；[化，物]结合的
+
+recognize vt.认出；识别；承认 vi.承认，确认；[法律]具结，立保证书
+
+capable adj.能干的；有才能的；有才华的；能胜任的 n.有才能的，能干的 
+
+closure n.（永久的）停业，关闭；结束；[电]闭合；[数]闭包 vt.使结束，使终止；使停止辩论
+
+anonymous adj.无名的；假名的；匿名的；没有特色的
+
+metaprogramming 元程序设计
+
+tutorial n.个人辅导的；教程，辅导材料；使用说明书 adj.家庭教师的；指导教师的；辅导的；监护人的
+
+alternative adj.非正统的，不寻常的；两者择一的 n.二中择一；可供选择的事物；取舍；非传统（或他择性）生活方式的追随者（或鼓吹者）
+
+predict vt.预言，预测；预示，预告 vi.预言，预示：预言某事，预言
+
+limitation n.限制；局限；极限；起限制作用的规则（或事实、条件）
+
+gain vt.&amp; vi.获得；赢得；增加；（钟、表）走快n.利润；[土木工程]腰槽；获益vt.（在……上）开腰槽；吸引；（通过努力）到达；推进（一段距离） vi.增进；增进健康；得益；（重量的）增加
+
+gradual adj.渐进的，渐（升）降的；倾斜度小的；逐次的，逐渐的；平缓的 n.弥撒升阶圣歌；弥撒圣歌集
+
+cutting edge （刀片的）刃口；刀刃；剪刃；切削刃 adj.最新的（研究/报告）
+
+indicate  vt.表明，标示，指示；象征，暗示，预示；[医]显示需要做……的治疗
+
+innovative  创新的
+
+it was to be called 它被成为
+
+alliance n.（国家、政党等的）结盟，同盟，联盟，联合；联姻；同盟条约；同盟者
+
+capitalize vt.用大写字母写或印刷；使…资本化；估计…的价值；把…定为首都vi.利用；积累资本
+
+fledgling n.（刚学会飞的）幼鸟；无经验的人；乳臭小儿 adj.刚开始的；无经验的
+
+reach v.到达，走到；够…，抓…；完成 n.手脚能够到的范围；范围，区域；影响的范围，管辖的范围
+
+tie n.关系；领带，绳子；平局；束缚，限制vt.（用线、绳等）系；（在线、绳上）打结；连接；与…成平局vi.打结，系上；平局；被用带（或绳子等）系住
+
+whatsoever pron.无论什么
+
+exactly adv.精确地；确切地；完全地，全然；恰恰
+
+specify vt.指定；详述；提出…的条件；使具有特性vi.明确提出，详细说明
+
+statement n.声明；（思想、观点、文章主题等的）表现；（文字）陈述；结算单vi.（英国）对儿童进行特殊教育评估认定vt.申请（小孩）有特殊教育需要
+
+Reserved adj.预订的；矜持的；储藏着的 v.保留[储备]某物
+
+implement vt.实施，执行；使生效，实现；落实（政策）；把…填满 n.工具，器械；家具；手段；[法]履行（契约等）
+
+facet n.小平面；侧面，方面；（昆虫的）小眼面；[建]柱槽筋 vt.在…上琢面
+
+proposal n.提议；建议；求婚；〈美〉投标
+
+evolution n.演变，发生；进化论；（天体的）形成；（气体等的）放出 
+
+sought  v.寻找，探寻( seek的过去式和过去分词 )；企图；试图；探索
+
+clarify vt.&amp; vi.使清楚，澄清vt.（尤指通过加热使黄油）纯净；说明；使（头脑、神智等）清醒 vi.（液体）变得澄清；净化；变得清楚
+
+Conformance 1. 一致性 2. 适应性 3. 合宜性 4. 顺世
+
+implementation n.成就；贯彻
+
+explosive adj.爆炸的；易爆炸的；突增的；暴躁的 n.爆炸物，炸药；[语言学] 爆破音
+
+entire adj.全部的；整个的；全体的；囫囵
+
+consider the following 考虑下面的
+
+Traversal and Range 遍历和范围
+
+SMIL 是同步多媒体集成语言（Synchronized Multimedia Integration Language）
+
+compare vt.&amp; vi.比较，对照 vt.比拟，喻为；[语]构成 vi.相比，匹敌；比较，区别；比拟（常与to连用）n.比较
+
+examine vt.检查，调查；考试；诊察；审问 vi.检查；调查
+
+affect vt.影响；假装；感动；（疾病）侵袭 n.感情，情感，心情；[精神病学]（表露或觉察到的）情绪反应
+
+prepare vt.准备；预备（饭菜）；配备；使（自己）有准备 vt.&amp; vi.筹备，进行各项准备工作；做好思想准备；作出，制订；。锻炼（身体等），训练
+
+
+
+第二章  在HTML中使用javaScript
+
+immediately adv.立即，马上；直接地；紧接地 conj.一……就，即刻
+
+predominant adj.主要的，占主导地位的；占优势的，卓越的；有影响的；特优种
+
+formalize vt.使正式，形式化；拘泥形式 vi.拘泥于形式
+
+primary adj.首要的，主要的；最早的，原始的；[地质学]原生的；基本的 n.第一位；最好者；要素；候选人提拔会
+
+async adj.异步的
+
+optional  adj.可选的
+
+execution n.实行，履行，执行，贯彻；作成，完成;
+
+deprecate vt.不赞成，反对
+
+assume vt.取得（权力）；承担，担任；假设，假定；呈现
+
+as follows  列举如下
+
+interpret vt.解释；理解；诠释，体现；口译 vi.作解释；作口译
+
+ignore vt.忽视，不顾；[法律]驳回（诉讼）
+
+deferred adj.延期的，缓召的 v.拖延，延缓，推迟（ defer的过去式和过去分词 ）；服从某人的意愿，遵从
+
+signal n.信号，暗号；预兆，征象；动机；导火线 vt.向……发信号；用动作（手势）示意；以信号告知 vi.发信号 adj.显著的，优越的；暗号的，作信号用的
+
+appear vi.出现，显现；出庭，出场；演出；发表
+
+approach vt.&amp; vi.接近，走近，靠近 vt.接近；着手处理；使移近；试图贿赂（或影响，疏通） n.方法；途径；接近 vi.靠近
+
+versus prep.（表示两队或双方对阵）对；（比较两种不同想法、选择等）与……相对；对抗
+
+external adj.外面的，外部的；表面上的；外用的；外国的 n.外部，外面；外观；外部情况
+
+extra adj.额外的，补充的，附加的；特大的，特别的 n.附加物，额外的事物；临时演员；号外；上等产品，上品 adv.额外地；格外地，特别地
+
+summary 1. 摘要 2. 总结 3. 总表 4. 本章小结 5. 提要
+
+interpretation  n.解释，说明；翻译；表演，演绎；理解
+
+
+
+第三章 基本概念
+
+borrow vt.&amp; vi.借，借进；模仿，剽窃；[数]由上位借；借钱，借用，[数]借位 n.借，借用；担保物，抵押；[英史]什一税
+
+pick up v.捡起；（尤指偶然地、无意地、不费劲地）得到；学会；爬[站]起
+
+familiar adj.熟悉的；通晓的；冒昧的；随便的 n.常客，密友；高级官吏的家属；[天主]教皇[主教]的仆人
+
+case-sensitivity  大小写敏感 
+
+concept n.观念，概念；观点；思想，设想，想法；总的印象
+
+identifier n.检验人，标识符；鉴别器；编号；识别符
+
+argument n.争论，争吵；论据；[数]幅角；主题，情节，[计]参数
+
+comments n.批评，意见，评论；评论（ comment的名词复数 ）；注释；谈话；说明
+
+erratic behavior 不规律性
+
+scope n.（处理、研究事务的）范围；眼界，见识；（活动或能力的）余地；广袤，地域 v.审视，仔细研究
+
+omit vt.省略；遗漏；删掉；未（做）
+
+confusion n.混乱；混淆；困惑
+
+initialize vt.初始化
+
+indent vt.切割…使呈锯齿状；缩进排版 n.（印刷中的）缩进；订单，订购  
+
+primitive adj.原始的；发展水平低的；落后的；[生物学]原生的 n.原始人；早期的艺术家（作品）；单纯的人：不世故的人；自学的艺术家、
+
+represent vt.表现，象征；代表，代理；扮演；作为示范 vi.代表；提出异议
+
+literal adj.照字面的；原义的；逐字的；平实的，避免夸张 n.[印]错排，文字上的错误
+
+distinct adj.明显的，清楚的；卓越的，不寻常的；有区别的；确切的
+
+infinity n.&lt;数&gt;无穷大；无限的时间或空间
+
+a set of  一套，一伙；樘
+
+manipulate vt.操作，处理；巧妙地控制；操纵；[医] 推拿，调整
+
+subtraction n.减，减法；减除法；减去
+
+unary adj. [数] 一元的
+
+prefix and postfix 前置与后置
+
+precedence  n.领先；优先权；地位先后，级别高低；位次
+
+therefore adv.因此；所以；故；乃
+
+evaluate vt.评价；评估
+
+negate vt.取消，使无效；否定，否认；使作废 vi.否定，否认；无效 n.反面，对立面
+
+arithmetic n.算术，计算；算法
+
+realistically adv.现实地；实际地；逼真地
+
+exclamation n.呼喊，惊叫；感叹；感叹语；感叹词
+
+operand n.操作数；运算数
+
+typically adv.典型地；代表性地；通常
+
+associated vt.合伙，合营；联合，结合；联想 vi.联系（associate的过去式和过去分词）；联盟；陪伴 n.合伙人；伴侣，同志；联想物，附随物；会员集体 adj.（用于联合企业的名称）联合的；有关联的；联合的
+
+straightforward  adj.直截了当的；坦率的；明确的 adv.直截了当地；坦率地
+
+either pron.（两者之中）任何一个 adj.（两者中）任一的；非此即彼的，两者择一的 adv.（否定句中）也；[用于否定句或否定词组后]也（不…），亦，而且；[口语] [用于否定句或否定词组后以加强语气]根本；... conj.[通常用于“either…or…”结构中]或者，要么[在“either…or…”结构中，动词的人称和数一般与离得最近的主动响应，但有时用第三人称单数，在口语中也有把两个主语合在一起用作复数的]
+
+concatenate  vt.把 （一系列事件、事情等）联系起来 adj.连接的，联系在一起的
+
+perform vt.&amp; vi.执行；履行；表演；扮演 vt.工作；做；进行；完成 vi.运行，表现；（驯兽）玩把戏
+
+versatile （指工具、机器等）多用途的；多才多艺的；有多种学问、技能或职业的；多功能的。
+
+the scope of the code  代码的作用域
+
+
+
+第四章 变量、作用域和内存问题
+
+determine vt.&amp; vi.（使）下决心，（使）做出决定 vt.决定，确定；判定，判决；使决定；限定 vi.[主用于法律]了结，终止，结束
+
+manipulate vt.操作，处理；巧妙地控制；操纵；[医] 推拿，调整
+
+In this figure 在这个图
+
+rectangle n.[数]长方形，矩形
+
+augmentation n.扩大；增大；增加物；&lt;音&gt;主题延长
+
+lookup n.检查；查找，查询；搜索
+
+garbage n.垃圾；脏东西；丢弃的食物；无用的数据
+
+responsible adj.尽责的；承担责任；负有责任的；懂道理的
+
+allocation n.配给，分配；分配额（或量）；划拨的款项；拨给的场地
+
+reclamation n.开垦；开拓；改造；废物回收利用
+
+algorithm n.运算法则；演算法；计算程序
+
+
+
+第五章 引用类型
+
+technically adv.技术上，工艺上；学术上；专业上 
+
+Up to this point 在这一点上
+
+instance  实例
+
+transmit vt.传输；传送，传递；发射；传染
+
+object literal 对象标识符，对象字面量
+
+curly brace n.花括号，大括号
+
+大于 [数] greater than
+
+notation n.记号，标记法
+
+slot n.位置；狭槽，水沟；[人名] 斯洛特；硬币投币口 vt.跟踪，跟着足迹追赶；开槽于
+
+accommodate vt.容纳；使适应；向……提供住处；帮忙 vi.[后面省去反身代词]适应于；（眼）作调节，调节眼球的晶状体（使其变得适应不同距离的物体）；
+
+square n.正方形；广场；平方；方格 adj.成直角的；平方的；（尤指在生意上）公平的；正方形的 adv.四四方方地；成直角地；正直地；坚定地
+
+bracket n.支架，悬臂；括弧；类别，等级；[数]同类项 vt.为…装托架；把…括在一起；把…分类；排除  square bracketsn.方括号
+
+due  adj.预定；适当的；应有的；由于 n.应有的权利，应得到的东西；应缴款（如俱乐部会费） adv.直接地，直达地；[古语] 适当地
+
+detect vt.查明，发现；洞察；侦察，侦查；[电子学]检波
+
+restrict vt.限制；约束
+
+specifically adv.特有地，明确地；按种别地；按特性地
+
+retrieve vt.取回；恢复；[计]检索；重新得到 vi.找回猎物 n.恢复，挽回；取回；[计]检索
+
+various adj.各种各样的；多方面的；许多的；各个的，个别的
+
+remain n.剩余物，残骸；残余；遗迹；遗体 vi.留下；保持；留待；依然 vi.&amp; link-v.搁置；剩余，剩下；逗留；终属，归于
+
+splice n.接合；衔接 v.接合；衔接 vt.拼接
+
+separate vt.&amp; vi.分开；（使）分离；区分；隔开 vt.分离（混合物）；分居；分类；割开 vi.分手；断裂；（夫妻）分居；断绝关系
+
+iterative adj.重复的，反复的，迭代的 n.反复体
+
+metacharacter n. 元字符
+
+locale n.（事件发生的）场所或地点
+
+Internal adj.国内的；内部的；体内的；内心的 prep.（机构）内部的
+
+
+
+第六章 面相对象的程序设计
+
+parasitic adj.寄生的；寄生物的；由寄生虫引起的
+
+degree n.[乐]音阶，度；[数]度，度数；程度；学位
+
+downside n.下降趋势；负面，消极面 adj.下降趋势的
+
+duplication n.复制； 重复；复本 ；成倍
+
+abstract adj.抽象的，理论上的；难解的；抽象派的；茫然的 n.抽象概念；抽象派艺术作品；摘要；[化]萃取物 
+
+initiative n.主动性；主动精神；倡议；主动权 adj.自发的；创始的；初步的
+
+derive vt.&amp; vi.得到，导出；源于，来自；（从……中）提取
+
+combination n.合作；密码组合；联合体；排列
+
+discernible adj.可识别的；可辨别的
+
+override vt.推翻，无视；践踏；优先于；覆盖 n.佣金；超驰控制装置；撤消，推翻
+
+revolve vt.&amp; vi.使旋转；反复考虑；使循环 vi.旋转；循环出现；反复考虑
+
+technique n.技巧，技术，手段；技能；手法
+
+
+
+第七章 函数表达式
+
+declaration n.宣言，布告，公告，声明；（纳税品在海关的）申报；[法]（原告的）申诉，（证人的）陈述，口供；
+
+presumably adv.据推测；大概；可能；想来
+
+
+
+第八章 浏览器对象模型
+
+expose vt.揭露，揭发；使暴露；使遭受；使曝光
+
+lack of 缺乏; 不足 缺少
+
+despite prep.不管；尽管（自己）不愿意；不在乎；虽有 n.侮辱；憎恨；怨恨；轻蔑的拒绝或不承认
+
+ternary adj.三重的；三进制
+
+straightforward adj.直截了当的；坦率的；明确的 adv.直截了当地；坦率地
+
+restriction n.限制，限定；拘束，束缚；管制
+
+
+
+第九章 客户端检测
+
+capability n.才能，能力；容量；性能；生产率
+
+flaw n.瑕疵，缺点；一阵狂风；短暂的风暴；裂缝，裂纹 v.使生裂缝，使有裂纹；使无效；使有缺陷 vi.生裂缝；变的有缺陷
+
+spoof n.&amp; vt.&lt;口&gt;①（进行）滑稽的模仿；哄骗；戏弄；讽刺
+
+identify vt.识别，认出；确定；使参与；把…看成一样 vi.确定；认同
+
+
+
+第十章 文档对象模型
+
+hierarchy n.[计]分层，层次；等级制度；统治集团；天使的级别或等级
+
+incompatibility n.不两立，不相容；不和谐；非兼容性；相畏
+
+gotcha  我已经得到你了；陷阱
+
+dynamic adj.动态的；动力的，动力学的；充满活力的，精力充沛的；不断变化的，充满变数的 n.动态；动力，推动变化的力量；动力学；活力
+
+innovation n.改革，创新；新观念；新发明；新设施
+
+constant adj.不断的，持续的；永恒的，始终如一的；坚定；忠实的 n.[数]常数，常量；不变的事物；永恒值
+
+invent vt.发明，创造；虚构
+
+independent adj.自主的；不相关连的；无党派的；不相干的人所做的（或提供的） n.独立自主的人；无党派人士
+
+markup n.（在成本的基础上）加价，利润；赢利
+
+recommendation n.推荐；推荐信；建议；可取之处
+
+several adj.几个的；专有的，独占的；各自的，各个的；不同的 pron.几个，数个；数人
+
+characteristics adj.特有的；独特的；表示特性的；显示……的特征的 n.特性，特征，特色，[数]（对数的）首数；独特性；性质
+
+piece n.（尤指一套中的）一件；一部分，一段；片，部分；一件文艺作品 vt.修补；连接，接上
+
+against prep.（表示态度）反对；（表示方位）紧靠着……；（表示对象）对……不利；以……兑换 conj.在……之时；在……之前
+
+
+
+第十一、二章 文档对象模型扩展
+
+这一章因为编码问题导致所记的消失了，以上看到的全部都是以前的文档备份。
+
+
+
+radical adj.根本的，基本的；激进的；彻底的；[植]根生的 n.激进分子；根基，原子团；[数学]根数
+
+departure n.离开，离去；起程；背离；东西距离
+
+focus instead on 重点放在
+
+purely adv.完全地，十足地；纯粹地；纯洁地，贞淑地
+
+contain vt.包含，容纳；克制，遏制；牵制；包括或由……构成
+
+overlap n.重叠部分；覆盖物，涂盖层；[数]交叠，相交 vt.重叠；与……部分相同 vi.互搭，重叠；部分相同；[数]有与……共同的某物
+
+vast adj.广阔的；巨大的；大量的；巨额的 n.浩瀚；广大无边的空间
+
+adopted adj.被收养的，被采用的
+
+fine-grained adj.有细密纹理的；细颗粒的
+
+encompass vt.围绕，包围；包含或包括某事物；完成
+
+iterator 迭代器
+
+
+
+第十三章 事件
+
+propagation  n.传播，传输，蔓延，扩展，波及深度；〔生〕繁殖法，〔地〕传导；宣传；培养
+
+capture vt.俘获；夺取；夺得；引起（注意、想像、兴趣） n.捕获；占领；捕获物；[计算机]捕捉
+
+
+
+第十四章 表单脚本
+
+evolve vt.使发展；使进化；设计，制订出；发出，散发 vi.发展；[生]通过进化进程发展或发生
+
+offload v.卸下，卸货
+
+pressed adj.紧缺的；（食物）压成某种形状的；压平的；金钱（或空间、时间等） 有限 v.按（ press的过去式和过去分词 ）；逼迫；压榨；使紧贴
+
+manner n.方式，方法，做法；态度，样子，举止；礼貌，规矩；风俗，习惯，惯例，生活方式
+
+utility n.功用，效用；有用的物体或器械；公用事业公司；公用事业 adj.有多种用途的；各种工作都会做的；能在数个位置作替补的；为获得经济价值而饲养
+
+validation n.确认
+
+typically adv.典型地；代表性地；通常
+
+regardless adv.不顾后果地；不管怎样，无论如何；不惜费用地 adj.不重视的，不尊敬的；不顾虑的，不关心的；不受注意的，毫无价值的
+
+omit vt.省略；遗漏；删掉；未（做）
+
+
+
+第十五章 图形与画布
+
+Arguably adv.可论证地；可争辩的
+
+designate vt.指明，指出；指派；表明，意味着；把……定名为 adj.指定而尚未上任的；选出而尚未上任的
+
+variant n.（词等的）变体，（字音的）转讹；[生]变种，变异体；变形，变量，转化；[统]变式 adj.不同的，相异的，不一致的；多样的；变异的；易变的，不定的
+
+radial adj.辐射状的；放射式的；径向的；星形的 n.子午线轮胎，辐射状轮胎
+
+composition n.作文，作曲；创作；构图，布置；妥协，和解
+
+Dimension n.尺寸；[复]面积，范围；[物]量纲；[数]次元，度，维 adj.（石料，木材）切成特定尺寸的 vt.把……刨成（或削成）所需尺寸；标出尺寸
+
+Buffer n.缓冲器；起缓冲作用的人（或物）；[化]缓冲液，缓冲剂；[计]缓冲区 vt.缓冲；[化]把缓冲液加入（溶液）
+
+predictable adj.可预言的；可预报的；可预见的；可预料的
+
+
+
+从十六章到二十五章大概的看了一下，就不做详细的记载了，接下来就是在网站中去实战了。
+
+</pre>
+<h1>对做笔记的思考</h1>
+<p>把这本书的笔记做完后，我对笔记的作用产生了疑惑，感觉它的作用不是很大。记得高中每次看书都要做笔记，整个高中下来记录了很多笔记，结果高中毕业后整个笔记就被闲置了，我想以后也不会再去看了。所以决定看书要少做笔记，也不要刻意要求自己去做笔记，不然就像被限制住了，得不到看书的自由。感觉很多东西互联网上都有，为什么还要记一次，如果记下来后还是不记得，那么我记的笔记与互联网上的知识又有何异？坑爹的一段话我又扯远了，我只是来上传笔记的&#8230;</p>
+</div>
+</article>
+
+<div class="post_comment">
+<script type="text/javascript">
+var duoshuoQuery = {"short_name":"sune","sso":{"login":"http:\/\/sune.yileit.com\/wp-login.php?action=duoshuo_login","logout":"http:\/\/sune.yileit.com\/wp-login.php?action=logout&_wpnonce=544c56f256"},"theme":"default","stylePatch":"wordpress\/simple"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+(function() {
+    var ds = document.createElement('script'); ds.type = 'text/javascript'; ds.async = true;
+    ds.charset = 'UTF-8';
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script><a name="comments"></a>
+
+<div class="ds-thread" data-thread-key="372" data-author-key="1" data-title="Professional JavaScript For Web Developers 3rd Edition 读书笔记" data-url="./pjfwd3e/"></div>
+
+<script type="text/javascript">
+	if (typeof DUOSHUO !== 'undefined')
+		DUOSHUO.EmbedThread('.ds-thread');
+</script>
+	<div id="ds-ssr">
+
+		
+            <ol id="commentlist">
+                            </ol>
+
+		            
+    </div></div>
+
+</div>
+
+<div class="post_bottom">
+<time>2013年8月20日</time> | <a rel="nofollow" href="../pjfwd3e/#response" title="添加新评论"><a href="../pjfwd3e/#respond" class="ds-thread-count" data-thread-key="372" title="Comment on Professional JavaScript For Web Developers 3rd Edition 读书笔记">0 条评论</a></a>
+<span class="premalink">
+<a rel="nofollow" href="../pjfwd3e/" >./pjfwd3e/</a>
+</span>
+</div>
+<div class="post_pre_n_nex">
+<div class="post_arrow"></div>
+<ul>
+<li class="post_pre"><a href="../little-understanding-of-the-sune-of-life/" rel="prev">&laquo;对熊样人生的小感悟</a></li><li class="post_nex"><a href="../sum2013hi2014/" rel="next">光阴不停地飞逝，总结2013计划2014»</a></li></ul>
+</div>
+
+</section>
+<div class="clear"></div>
+<footer id="footer"> 
+<div class="copy">
+</div>
+</footer>
+<!-- ====e mian==== -->
+
+</div>
+</div>
+<!-- s toggleav -->
+<div id="about">
+<div class="sidebar">
+<ul id="sidebar1" class="clearfix">
+<li class="current"><a href="../">首页</a></li>
+<li><a href="http://weibo.com/SuneXiong"  target="_blank" title="">微博</a></li>
+</ul>
+<ul id="sidebar2" class="clearfix">
+
+<li class="bdline-h hide"><div class="search-wrap bdline-w">
+</div></li>
+<li class="bdline-h more">朋友：<a href="http://www.huangxiaolong.net"  target="_blank"  class="ico-prev">黄小龙</a></li>
+</ul>
+<div class="clearfix"></div>
+</div>
+<a href="#" id="topsection"></a>
+</div>
+<!-- e toggleav -->
+<!-- s backtop -->
+<a id="scrollUp" href="#top" title="backtop" ></a>
+<!-- e backtop -->
+
+<script type='text/javascript' src='../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9'></script>
+<script type='text/javascript' src='../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCss.js?ver=3.0.9'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9";
+
+		if ( corecss.setAttribute ) {
+
+				corecss.setAttribute( "rel", "stylesheet" );
+
+				corecss.setAttribute( "type", "text/css" );
+
+				corecss.setAttribute( "href", corecssurl );
+
+		} else {
+
+				corecss.rel = "stylesheet";
+
+				corecss.href = corecssurl;
+
+		}
+
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+
+		var themecssurl = "../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeMidnight.css?ver=3.0.9";
+
+		if ( themecss.setAttribute ) {
+
+				themecss.setAttribute( "rel", "stylesheet" );
+
+				themecss.setAttribute( "type", "text/css" );
+
+				themecss.setAttribute( "href", themecssurl );
+
+		} else {
+
+				themecss.rel = "stylesheet";
+
+				themecss.href = themecssurl;
+
+		}
+
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+
+</script>
+
+</body>
+</html>

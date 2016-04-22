@@ -1,0 +1,26 @@
+{
+  "name": "sune-blog",
+  "version": "0.0.1",
+  "license": "MIT",
+  "hexo": {
+    "version": "3.2.0"
+  },
+  "scripts": {
+    "start": "hexo server",
+    "deploy": "hexo generate && gulp deploy"
+  },
+  "dependencies": {
+    "hexo": "^3.2.0",
+    "hexo-generator-feed": "^1.1.0",
+    "hexo-generator-index": "^0.2.0",
+    "hexo-generator-tag": "^0.2.0",
+    "hexo-renderer-jade": "^0.3.0",
+    "hexo-renderer-marked": "^0.2.10",
+    "hexo-renderer-stylus": "^0.3.1",
+    "hexo-server": "^0.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4"
+  }
+}

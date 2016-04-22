@@ -1,0 +1,18 @@
+doctype html
+html(lang=config.language)
+
+  block variables
+
+  head
+    include ../includes/head
+
+  body(class=bodyClass)
+    //- include ../includes/header
+
+    .content-wrap
+      if body
+        div!= body
+      else
+        block content
+
+    include ../includes/google-analytics

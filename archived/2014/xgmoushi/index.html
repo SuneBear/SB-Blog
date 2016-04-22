@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>孝感某事网</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<!--
+源码真心不好看,如果网站在2013年06月10日还没有上线的话，就说明放弃了
+如果你也有兴趣做这个网站，可以联系我！
+QQ：759203696
+-->
+
+<!--[if IE 6]>
+<script src="js/iepng.js" type="text/javascript"></script>
+<script type="text/javascript">
+   EvPNG.fix('img');
+</script>
+<![endif]-->
+
+
+
+<!--====s样式文件====-->
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/animate.css" rel="stylesheet" type="text/css" />
+<!--====e样式文件====-->
+
+
+<!--====sheadJS：基础层====-->
+<script>var GV = {JS_ROOT : 'js/',JS_VERSION : '0.3.9'};</script>
+<script language="javascript" type="text/javascript" src="js/wind.js"></script>
+<!--====eheadJS====-->
+
+
+</head><body>
+
+
+<!--====sloading====-->
+<div class="w-load2" id="load2"><div class="load">&nbsp;</div></div>
+<!--====eloading====-->
+
+<!--====s全局背景图片====-->
+<div class="global_background  cycle" >
+<img src="image/1.jpg"   class="global_background_content" id="image1" />
+<img src="image/2.jpg"   class="global_background_content" />
+<img src="image/3.jpg"   class="global_background_content" />
+<img src="image/4.jpg"   class="global_background_content" />
+<img src="image/5.jpg"   class="global_background_content" />
+<img src="image/6.jpg"   class="global_background_content" />
+</div>
+<!--====e全局背景图片====-->
+
+
+<!--====s背景音乐:为什么简单的背景音乐需要用这个插件？因为后期需要这个插件做播放器，先熟悉一下====-->
+<div id="jplayer"></div>
+<!--sGUI容器：暂时隐藏-->
+<div id="jp_container_1" class="jp-audio" style="display:none;" >
+<ul>
+<li class="jp-play ui-state-default ui-corner-all"><a href="javascript:;" class="jp-play ui-icon ui-icon-play" tabindex="1" title="play">play</a></li>
+<li class="jp-pause ui-state-default ui-corner-all"><a href="javascript:;" class="jp-pause ui-icon ui-icon-pause" tabindex="1" title="pause">pause</a></li>
+</ul>
+</div>
+<!--eGUI容器-->
+<!--====e背景音乐====-->
+
+
+<!--====s主体====-->
+<div class="w_main" >
+<div class="b_h mc f_logo" style="width:335px;background:url(image/logobg.gif)  no-repeat;">
+<img src="image/logo.png"  class="logo tada" />
+<div class="logoword" style="font-size:20px;color:#d3d5d5;line-height:28px;letter-spacing:2px;visibility: hidden;font-family: microsoft yahei;padding-left:32px;padding-top:10px;text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.8);" >某些人，某些事...经历过后定会在你的生命中留下些什么，或深或浅，或好或坏，这就是回忆。用最真实的记忆，最朴实的文笔记录在孝感这座古城经历的某些人，某些事。 —— Sune </div>
+</div>
+</div>
+<!--====e主体====-->
+
+
+<!--====s底部====-->
+<div class="w_footer"  >
+<span class="footer_content"  ><span id="words" >记录孝感的某些事</span>
+<span class="tip"><ul class="texts"><li>敬请期待...</li><li>被抛弃了...</li></ul></span>
+</span>
+</div>
+<!--====e底部====-->
+
+<!--====sfootJS：共用层与应用层====-->
+<script>
+Wind.use('jquery','jplayer','playlist','cycle2','lettering','textillate',function(){
+
+<!--播放器-->
+$("#jplayer").jPlayer({
+ready: function () {
+$(this).jPlayer("setMedia", {
+mp3:"data/attachment/buzaiku.mp3"
+}).jPlayer("play");
+},
+swfPath: "js",  //播放器路径
+supplied: "mp3", //支持格式
+wmode: "window",
+volume: "0.8",  //调节音量0-1
+loop: true //循环
+})
+
+
+<!--文字-->
+$('.logoword').textillate({initialDelay: 10000 ,loop: false,in: { effect: 'flipInX',delay:150 } });
+$('#words').textillate({initialDelay: 6000, in: { effect: 'fadeInLeftBig' } });
+$('.tip').textillate({
+initialDelay: 8000,
+in: { effect: 'bounceInDown' }
+});
+
+
+
+<!--元素载入时淡入-->
+$(".w-load2").fadeOut(8000);
+$("#image1").load(function() {
+})
+//暂时放弃这个效果
+});
+</script>
+
+
+<!--s下雪:这种小雪的感觉使人无法自拔-->
+<script  src="js/snow.js"></script>
+<!--<script  src="js/rain.js"></script> --><!--e下雪-->
+<!--====efootJS====-->
+
+</body></html>

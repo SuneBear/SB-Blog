@@ -1,0 +1,16 @@
+extends layouts/default
+
+block variables
+  - var bodyClass = 'page-index'
+
+block content
+  if site.posts.length > 0
+  .articles-thread
+    each post in site.posts.sort('date', -1).limit(config.per_page).toArray()
+      .article-item.readable
+        h1= post.title
+        if post.date
+        .content !{post.content}
+        time(datetime=post.date.toJSON()) Date: #{date(post.date, date_format)}
+
+  //- include includes/pagination

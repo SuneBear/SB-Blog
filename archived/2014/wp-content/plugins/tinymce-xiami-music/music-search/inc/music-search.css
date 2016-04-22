@@ -1,0 +1,75 @@
+a {text-decoration:none;}
+fieldset {margin:0; padding:4px; border:1px solid #dfdfdf;}
+input[type="checkbox"] {height:16px; width:16px; margin-right:5px; vertical-align:text-bottom;}
+input[type=checkbox]:checked:before, .widefat th input[type=checkbox]:before {font:normal 20px/1 Dashicons; margin:-3px -3px;}
+select {width:120px; vertical-align:initial !important;}
+.mceActionPanel {margin-top:10px;}
+#wall_Panel fieldset {margin:5px 0; padding:5px 10px 10px;}
+#gAdSense {display:block; height:20px; width:468px; overflow:hidden; margin-top:10px;}
+
+#autoPlay {margin-left:12px; padding:8px;}
+/* webkit/firefox/opera */
+@media all and (min-width:0px) {#autoPlay {border:1px solid #CCC; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px;}}
+#autoPlay a {color:#f00; border-bottom:1px solid #f00; padding:1px 2px;}
+#autoPlay a:hover {color:#fff; background-color:#f00;}
+
+#ecIcon {border:0px; width:16px; height:16px; margin-left:2px; vertical-align:text-bottom; cursor:help;}
+#ecBox {
+	background:#000;
+	background:-webkit-gradient(linear,left top,left bottom,from(rgba(66,69,72,.9)),to(rgba(51,55,59,.9)),color-stop(0.9,rgba(26,28,30,.9)));
+	background:-moz-linear-gradient(top,rgba(66,69,72,.9),rgba(26,28,30,.9) 90%,rgba(51,55,59,.9));
+	background:linear-gradient(top,rgba(66,69,72,.9),rgba(26,28,30,.9) 90%,rgba(51,55,59,.9));
+	border:1px solid rgba(0,0,0,.2);
+	opacity:1;
+	-webkit-box-shadow:0 0 1px rgba(255,255,255,.2) inset,0 1px 3px rgba(0,0,0,.8);
+	-moz-box-shadow:0 0 1px rgba(255,255,255,.2) inset,0 1px 3px rgba(0,0,0,.8);
+	-o-box-shadow:0 0 1px rgba(255,255,255,.2) inset,0 1px 3px rgba(0,0,0,.8);
+	box-shadow:0 0 1px rgba(255,255,255,.2) inset,0 1px 3px rgba(0,0,0,.8);
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	position:absolute;
+	left:125px;
+	top:535px;
+	padding:5px 10px;
+	max-width:300px;
+	max-height:400px;
+	z-index:9999;
+}
+#ecArrow {
+	background:url(../images/anchor_alt.png) no-repeat scroll 0 0;
+	width:12px;
+	height:6px;
+	position:absolute;
+	top:44px;
+	left:75px;
+}
+#ecImages {
+	height:33px;
+}
+
+/* 虾米音乐 */
+#search_Result {zoom:1; display:block; max-height:415px; overflow:auto; overflow-x:hidden;}
+#search_Result .widefat {width:100%;}
+#music_List .check-column {padding:9px 0 22px;}
+#music_List .check-column input {margin:0 0 0 8px; padding:0; vertical-align:text-top;}
+#music_List .song_name strong {display:block; margin-bottom:.2em;}
+
+/* 分页 */
+ul,li {list-style:none; margin:0; padding:0;}
+.pages {margin-top:10px; overflow:hidden; zoom:1;}
+	.pages ul {height:21px; overflow:hidden;}
+		.pages li {float:left; margin-right:2px; height:21px; line-height:21px; overflow:hidden;}
+			.pages li a {float:left; padding:0 6px; height:19px; line-height:19px; border:1px solid #E3E4DD; font-size:13px; font-family:Verdana; vertical-align:middle; overflow:hidden;}
+			.pages li a, .pages li a:visited {color:#8F8F8F;}
+			.pages li a:hover {border-color:#839B1B; color:#FFF; background-color:#839B1B;}
+		.pages .prevpage, .pages .lastpage {width:21px;}
+			.pages .prevpage a, .pages .prevpage a:visited, .pages .nextpage a, .pages .nextpage a:visited, .pages .lastpage a, .pages .lastpage a:visited {background-image:url(../images/bg_pages.gif); background-repeat:no-repeat; background-color:#FFF;}
+			.pages .prevpage a:hover, .pages .nextpage a:hover, .pages .lastpage a:hover {background-color:#839B1B;} 
+			.pages .prevpage a, .pages .prevpage a:visited  {padding:0 0 0 19px; width:0; background-position:7px -26px;}
+				.pages .prevpage a:hover {background-position:-21px -51px}
+			.pages .nextpage a, .pages .nextpage a:visited {padding:0 14px 0 7px; line-height:21px; background-position: 47px 6px;}
+				.pages .nextpage a:hover {background-position:19px -19px;}
+			.pages .lastpage a, .pages .lastpage a:visited {padding:0 0 0 19px; width:0; background-position:6px -58px;}
+				.pages .lastpage a:hover {background-position:-18px -83px;}

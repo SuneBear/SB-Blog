@@ -1,0 +1,544 @@
+/*===================
+@name:共用样式(等于是重置层与公用层与部件层整合)
+@use:所有页面都会使用到的样式，包含重置，一般用于栅格布局的页面
+@author:sune 
+@email:759203696@qq.com
+@date:2012-12-31
+@list:
+>>重置：使所有浏览器都显示一样
+>>字体：常规字体大小样式
+>>定位：三种常用的定位
+>>浮动：左右浮动与清除
+>>间距：内外边距
+>>宽度：常用的宽度
+>>包裹：包住盒子，增加背景
+>>盒子：确定基本布局，控制盒子间的间距，装各个部件
+>>头部：公用部件组
+  >>搜索
+  >>登陆
+  >>导航
+>>底部：公用部件组
+  >>联系
+  >>底部导航
+  >>版权
+>>其他：公用部件组
+  >>loading
+===================*/
+
+/*s====重置====*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+html {/*ie6固定弹窗滚动hack*/
+	_background-image:url(../image/blank.gif);
+	background-attachment:fixed;
+	-webkit-text-size-adjust:none;
+}
+html, body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+body {
+	background:url(../image/fullbody.png);
+	background-color: #383E43;
+    zoom: 1;
+transition: 0.5s ease-out;
+-webkit-transition: 0.5s ease-out;
+-moz-transition: 0.5s ease-out;
+-ms-transition: 0.5s ease-out;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {  /*html5标签初始化*/
+	display: block;
+}
+button, input, select, textarea { /* 使得表单元素在 ie 下能继承字体大小 */
+	font-size:100%;
+}
+pre {/*解决ff下不换行问题*/
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+form {
+	display:inline;
+}
+ol, ul {
+	list-style: none;
+}
+img {
+	border: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th {
+	text-align: left;
+	font-weight:100;
+}
+td, th, div {
+	word-break:break-all;
+	word-wrap:break-word;
+}
+input, button, textarea, select, optgroup, option {
+	font-family:inherit;
+	font-size:inherit;
+	font-style:inherit;
+	font-weight:inherit;
+}
+address, cite, dfn, em, var { /* 将斜体扶正 */
+	font-style:normal;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+/*e====重置====*/
+
+/*s====字体====*/
+.b {
+	font-weight:700 !important;
+}
+.u {
+	text-decoration:underline !important;
+}
+.i {
+	font-style:italic !important;
+}
+.red {
+	color:#C00;
+}
+.blank {
+	color:#000;
+}
+.white {
+	color:#fff;
+}
+.blue {
+	color:#06F;
+}
+.green {
+	color:#0F3;
+}
+.f10 {
+	font-size:10px;
+}
+.f12 {
+	font-size:12px !important;
+}
+.f14 {
+	font-size:14px;
+}
+.f16 {
+	font-size:16px;
+}
+.f18 {
+	font-size:18px;
+}
+.f24 {
+	font-size:24px;
+	font-family:Arial, "Microsoft Yahei", Simsun;
+}
+.fn {
+	font-weight:normal !important;
+}
+/*e====字体====*/
+
+/*s====定位====*/
+.pr {
+	position:relative;
+}
+.pa {
+	position:absolute;
+}
+.pf {
+	position:fixed;
+}
+/*e====定位====*/
+
+/*s====浮动====*/
+.fl {
+	float:left !important;
+	display:inline;
+}
+.fr {
+	float:right !important;
+	display:inline;
+}
+.cc {  /*作用于父模型*/
+	zoom:1;
+}
+.cc:after {
+	content:'\20';
+	display:block;
+	height:0;
+	clear:both;
+	visibility: hidden;
+}
+.c { /*作用于浮动模型后，父模型区域里*/
+	clear:both;
+	height:0;
+	font:0/0 Arial;
+	overflow:hidden;
+	width:0;
+}
+/*e====浮动====*/
+
+/*s====间距====*/
+.mt5 {
+	margin-top:5px !important;
+}
+.mt10 {
+	margin-top:10px !important;
+}
+.mt15 {
+	margin-top:15px !important;
+}
+.mt20 {
+	margin-top:20px !important;
+}
+.mr5 {
+	margin-right:5px !important;
+}
+.mr10 {
+	margin-right:10px !important;
+}
+.mr15 {
+	margin-right:15px !important;
+}
+.mr20 {
+	margin-right:20px !important;
+}
+.mc {
+	margin:0 auto;
+}
+.pd5 {
+	padding:5px;
+}
+.pd10 {
+	padding:10px;
+}
+.pd15 {
+	padding:15px;
+}
+.pd20 {
+	padding:20px;
+}
+.pt20 {
+	padding-top:20px;
+}
+/*e====间距====*/
+
+
+/*s====宽度====*/
+.w_270 {
+	width:270px;
+}
+.w_280 {
+	width:280px;
+}
+.w_290 {
+	width:290px;
+}
+.w_390 {
+	width:380px;
+	padding:0 5px;
+}
+.w_654 {
+	width:654px;
+}
+.w_664 {
+	width:664px;
+}
+.w_674 {
+	width:674px;
+}
+.w_700 {
+	width:700px;
+}
+/*e====宽度====*/
+
+/*s====包裹====*/
+
+.global_background {
+	position:absolute;
+	_position:static;
+	z-index:1;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	top:0px;
+	left:0px;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+.global_background_content {
+	margin-left:0px;
+	height:auto;
+	width:100%;
+	display:none;
+}
+.w_body {  /*增加主体背景的作用，写在body标签上面*/
+	background:#999;
+}
+.w_header {
+	width:100%;
+}
+.w_main {  /*因为具体宽度，所以需要居中，若要头部与底部也居中则写相同代码即可，如果主体很复杂，则要把main_wrap区分为多个包裹*/
+	width:100%;
+	position: absolute;
+	top:20%;
+	z-index:2;
+}
+.w_footer {
+	width: 100%;
+	background: url(../image/shadow2.png) repeat-x;
+	position: absolute;
+	z-index: 8;
+	bottom: 0;
+	height:90px;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	background-position: 0 -136px;
+	float:left;
+}
+/*e====包裹====*/
+
+
+/*s====盒子====*/
+.b_o {   /*可见盒子*/
+	padding: 20px 20px 15px 20px;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+	background: white;
+	border: 1px solid;
+	border-color: white #EFEFEF lightGrey #EFEFEF;
+}
+.b_h {  /*透明盒子*/
+	padding: 20px 20px 15px 20px;
+}
+.b_v {  /*无效盒子*/
+}
+.b_c { /*子盒子，跟无效盒子一样，也没有样式，但是子盒子是表明用在其他盒子的里面*/
+}
+/*e====盒子====*/
+
+/*s====头部====*/
+/*搜索*/
+.search {
+}
+/ /*登陆*/
+.login {
+}
+/*导航*/
+.nav {
+	width:1004px;
+	margin:0 auto;
+}
+.nav li {
+	float:left;
+	padding-right:20px;
+}
+/*e====头部====*/
+
+/*====s底部====*/
+/*内容*/
+.footer_content {
+	text-align:center;
+	width:100%;
+	line-height:90px;
+	font-size:30px;
+	color:#fff;
+	float:left;
+	font-family:microsoft yahei;
+	visibility:hidden;
+}
+.footer_content .tip {
+	font-size:20px;
+	margin-left:20px;
+}
+/*联系*/
+.contact {
+}
+/*底部导航*/
+.footer_nav {
+}
+/*版权*/
+.copyright {
+}
+
+/*e====底部====*/
+
+/*s====其他====*/
+/*父部件*/
+.f_logo{behavior: url(iepngfix.htc);}
+/*loading*/
+.w-load2 {
+position: absolute;
+top: 50%;
+left: 0;
+z-index:1;
+width: 100%;
+}
+
+@-webkit-keyframes rotateOutDownLeftl {
+	0% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(0);
+	}
+	
+	50% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(3deg);
+	}
+
+	100% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@-moz-keyframes rotateOutDownLeftl {
+	0% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(0);
+	}
+	
+	50% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(3deg);
+	}
+
+	100% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@-o-keyframes rotateOutDownLeftl {
+	0% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(0);
+	}
+	
+	50% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(3deg);
+	}
+
+	100% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@keyframes rotateOutDownLeftl {
+	0% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(0);
+	}
+	
+	50% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(3deg);
+	}
+
+	100% {
+		-webkit-transform-origin: left bottom;
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+.rotateOutDownLeftl {
+	-webkit-animation-name: rotateOutDownLeftl;
+	-moz-animation-name: rotateOutDownLeftl;
+	-o-animation-name: rotateOutDownLeftl;
+	animation-name: rotateOutDownLeftl;
+}
+
+@-webkit-keyframes fadeOutl {
+	0% {opacity: 1;}
+	50% {opacity:.5;}
+    90%{opacity:.9;}
+    100%{opacity:.9;}
+}
+
+@-moz-keyframes fadeOutl {
+	0% {opacity: 1;}
+	50% {opacity:.5;}
+    90%{opacity:.9;}
+    100%{opacity:.9;}
+}
+
+@-o-keyframes fadeOutl {
+	0% {opacity: 1;}
+	50% {opacity:.5;}
+    90%{opacity:.9;}
+    100%{opacity:.9;}
+}
+
+@keyframes fadeOutl {
+	0% {opacity: 1;}
+	50% {opacity:.5;}
+    90%{opacity:.9;}
+    100%{opacity:.9;}
+}
+
+.logo{
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+
+
+-webkit-animation-name: fadeOutl,rotateOutDownLeftl;
+-moz-animation-name: fadeOutl,rotateOutDownLeftl;
+-o-animation-name: fadeOutl,rotateOutDownLeftl;
+animation-name: fadeOutl,rotateOutDownLeftl;
+
+-webkit-animation-iteration-count:infinite;
+-moz-animation-iteration-count:infinite;
+-ms-animation-iteration-count:infinite;
+animation-iteration-count:infinite;
+
+-webkit-animation-duration: 10s;
+-webkit-animation-delay: .5s;
+-webkit-animation-timing-function: ease;
+-webkit-animation-fill-mode: both;
+
+-moz-animation-duration: 10s;
+-moz-animation-delay: .5s;
+-moz-animation-timing-function: ease;
+-moz-animation-fill-mode: both;
+
+-ms-animation-duration: 10s;
+-ms-animation-delay: .5s;
+-ms-animation-timing-function: ease;
+-ms-animation-fill-mode: both;
+
+animation-duration: 10s;
+animation-delay: .5s;
+animation-timing-function: ease;
+animation-fill-mode: both;
+}
+.w-load2 .load {
+margin:0 auto;
+width:65px;
+line-height: 25px;
+background: url(../image/load.gif?020) no-repeat right center;
+}
+
+/*e====其他====*/
