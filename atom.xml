@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  <subtitle>Composing Flows, Spreading Memes</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://temp.sunebear.com/"/>
+  <updated>2016-04-23T06:54:13.000Z</updated>
+  <id>http://temp.sunebear.com/</id>
+  
+  <author>
+    <name>SuneBear</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Why I decided to stop writing</title>
+    <link href="http://temp.sunebear.com/2016/paused/"/>
+    <id>http://temp.sunebear.com/2016/paused/</id>
+    <published>2016-04-22T09:07:05.000Z</published>
+    <updated>2016-04-23T06:54:13.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Hey everybody,&lt;/p&gt;
+&lt;p&gt;That sounds terrible to me? Actually, I don’t think so. Of course, I know writing is very important to expressing thoughts and life, especially for newbie writers have an occasional day off.&lt;/p&gt;
+&lt;p&gt;In the past two years, I posted off and on &lt;a href=&quot;/2015&quot;&gt;dozens of articles&lt;/a&gt;. Since October 8, 2015, the day after National Day—I’ve stopped writing the blog. There are so many reasons to explain why I do it. However, these are too subjective to talk.&lt;/p&gt;
+&lt;p&gt;In a few words, I am just not enjoy writing anymore, even when I created a minimalist theme &lt;code&gt;dandelion&lt;/code&gt; with elegant typography. There are philosophical questions below I’ve asked myself for months:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why did I write it down? For sharing stories or relieving pressure?&lt;/li&gt;
+&lt;li&gt;What’s my writing worth?&lt;/li&gt;
+&lt;li&gt;How much do I know about myself?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Well, now I got an answer that keeping the writing paused for a long period of time in public platforms. I will spend more time in composing fantastic flows.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Keep silent and compose flows for a better new beginning.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kindly,&lt;br&gt;SuneBear&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hey everybody,&lt;/p&gt;
+&lt;p&gt;That sounds terrible to me? Actually, I don’t think so. Of course, I know writing is very important to expressing t
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
