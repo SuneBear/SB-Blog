@@ -1,11 +1,9 @@
+include ./includes/article
+
 extends layouts/default
 
 block variables
   - var bodyClass = 'page-post'
 
 block content
-  article.readable
-    h1= page.title
-    != page.content
-
-    include includes/disqus
+  +article-item(page)

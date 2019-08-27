@@ -1,0 +1,28 @@
+.site-header
+  display: flex
+  justify-content: space-between
+  padding-bottom: 30px
+
+  .name
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    text-indent: -9999px
+    background-image: url(/images/icons/apple-touch-icon-180x180.png)
+    background-size: cover
+    background-color: #eeeeee
+    -webkit-tap-highlight-color: transparent
+
+.page-post
+  .name
+    transform: rotate(45deg)
+
+@media (max-width: 768px)
+  .site-header
+    justify-content: center
+    padding-top: 15px
+    padding-bottom: 25px
+
+    .name
+      width: 45px
+      height: 45px

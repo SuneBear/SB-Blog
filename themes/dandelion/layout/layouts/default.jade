@@ -7,9 +7,10 @@ html(lang=config.language)
     include ../includes/head
 
   body(class=bodyClass)
-    //- include ../includes/header
 
     .content-wrap
+      include ../includes/header
+
       if body
         div!= body
       else

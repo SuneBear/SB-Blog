@@ -1,3 +1,4 @@
 header.site-header
-  span.name= config.author
-  span.slogan= config.subtitle
+  a.name(href=page.path === 'index.html' ? '/about' : config.root)= config.author
+
+  // a.slogan(href='/about') About

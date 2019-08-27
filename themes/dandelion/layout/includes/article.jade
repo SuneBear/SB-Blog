@@ -1,0 +1,8 @@
+mixin article-item(post)
+  .article-item.readable
+    a.title-link(href=url_for(post.path))
+      h1.article-title= post.title
+    .meta
+      a.time(href='/about') 由来自 #{moment(post.date).format('YYYY-MM-DD')} 这天的 #{config.author} 所写
+    if post.date
+    .content !{post.content}
