@@ -1,0 +1,309 @@
+<!DOCTYPE html><html><head><title>Amazing Jike | Loading...</title><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><meta name=apple-mobile-web-app-capable content=yes><link href=http://sunebear.com/private/static/styles/amazing.f8aaf9ac9de0671f8779a0d1c7935bd7.css rel=stylesheet></head><body class="page page-spa"><style>.init-loading {
+  position: fixed;
+  z-index: 970726;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.init-loading .logo-image {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 82px;
+  height: 162.9996px;
+}
+.init-loading .logo-canvas {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 37%;
+  width: 82px;
+  height: 162.9996px;
+  margin-left: -7px;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+.app-container {
+  -webkit-transform: translate3d(0, -30px, 0);
+          transform: translate3d(0, -30px, 0);
+}
+body.is-loaded .app-container {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition-duration: 418ms;
+          transition-duration: 418ms;
+  transition-time-function: linear;
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
+}
+body.is-loaded .init-loading {
+  opacity: 0;
+  -webkit-transition: all 518ms;
+  transition: all 518ms;
+}
+body.is-loaded .init-loading .logo-canvas {
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-55%);
+          transform: translateX(-50%) translateY(-55%);
+  -webkit-transition-duration: 418ms;
+          transition-duration: 418ms;
+}</style><div class=init-loading><img class=logo-image src=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjUycHgiIGhlaWdodD0iNTAycHgiIHZpZXdCb3g9IjAgMCAyNTIgNTAyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ni4xICg0NDQ2MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+SiBDb3B5IDM8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NjUuMDAwMDAwLCAtNzcuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC04LUNvcHktNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDY1LjAwMDAwMCwgNzcuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjUxLjU1MDAzNywwIEMyNTEuNTUwMDM3LDE5LjgwMTQxMzggMjUxLjQyNzgwNyw0MS45ODU5OTg0IDI1MS4xODMzNDYsNjYuNTU0NDE5MyBDMjUwLjkzODg4NCw5MS4xMjI4NDAyIDI1MC44MTY2NTQsMTIwLjE1MjI1NSAyNTAuODE2NjU0LDE1My42NDM1MzUgTDI1MC44MTY2NTQsMjIwLjM4MTMgTDI1MC44MTY2NTQsMzAyLjE1MzM5NyBDMjUwLjgxNjY1NCwzMzIuMjIyMjEgMjQ2LjM1NTI5MiwzNTguNzQ1OTI4IDIzNy40MzI0MzIsMzgxLjcyNTM0NyBDMjI4LjUwOTU3Myw0MDQuNzA0NzY1IDIxNC43NTg3OTgsNDI0LjM4MzY1MyAxOTYuMTc5NjkzLDQ0MC43NjI2IEMxNzcuNjAwNTg5LDQ1Ny4xNDE1NDggMTUzLjk0OTI1NSw0NzAuNTI1NjM2IDEyNS4yMjQ5ODIsNDgwLjkxNTI2NyBDOTYuNTAwNzA4Niw0OTEuMzA0ODk3IDYyLjIxNTQ0MTUsNDk4LjMzMzA3MiAyMi4zNjgxNTE5LDUwMiBMLTIuODQyMTcwOTRlLTE0LDQwNS45MjY5NTQgQzIwLjUzNDc5OTUsNDAzLjQ4MjMzNSAzOC41MDI0Nzk2LDQwMC4yNDMyNjMgNTMuOTAzNTc5MywzOTYuMjA5NjQyIEM2OS4zMDQ2Nzg5LDM5Mi4xNzYwMjEgODIuNzQ5ODgxNywzODUuNzU4OTkyIDk0LjIzOTU5MDksMzc2Ljk1ODM2NCBDMTA2LjQ2MjY4NiwzNjcuNDI0MzUgMTE1LjY5MDk4NCwzNTUuNDQ1ODk2IDEyMS45MjQ3NjMsMzQxLjAyMjY0NCBDMTI4LjE1ODU0MSwzMjYuNTk5MzkyIDEzMS4yNzUzODMsMzA3LjUzMTY1IDEzMS4yNzUzODMsMjgzLjgxODg0NiBDMTMxLjI3NTM4MywyNjQuNzUwODE4IDEzMS4zMzY0OTgsMjQ0LjY0NDEyOCAxMzEuNDU4NzI5LDIyMy40OTgxNzQgQzEzMS41ODA5NiwyMDIuMzUyMjIgMTMxLjY0MjA3NSwxODAuNTM0MzIyIDEzMS42NDIwNzUsMTU4LjA0MzgyOCBDMTMxLjY0MjA3NSwxMTguOTI5OTI0IDEzMS40NTg3MzEsODcuODIyNjEzNyAxMzEuMDkyMDM4LDY0LjcyMDk2NDIgQzEzMC43MjUzNDUsNDEuNjE5MzE0NyAxMzAuNDE5NzcyLDIwLjA0NTg3NTcgMTMwLjE3NTMxLDAgTDI1MS41NTAwMzcsMCBaIiBpZD0iSi1Db3B5LTMiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+><canvas class=logo-canvas></canvas></div><script>/* eslint-disable */
+
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// @REF: https://codepen.io/SuneBear/pen/brxQdj
+(function () {
+
+  // Constants
+  var MAIN_COLOR = '#383838';
+  var LOGO_BG_COLOR = 'rgba(255, 255, 255, 1)'; // #F7F7F7 | #FFE411/(255, 228, 17)
+  var LOGO_BORDER_COLOR = MAIN_COLOR;
+  var LOGO_WALL_COLOR = 'rgba(38, 38, 38, 0.8)';
+  var WRAP_BORDER_COLOR = 'rgba(255, 255, 255, 1)';
+  var OVERLAY_COLOR = 'rgba(240, 240, 240, 0)';
+
+  var RESOLUTION = window.devicePixelRatio || 1;
+
+  var OVERLAY_SPEED = 8 * RESOLUTION;
+  var BASE_DIST = 2 * RESOLUTION;
+  var MAX_DIST = 8.3 * RESOLUTION;
+  var WALL_WIDTH = 1 * RESOLUTION;
+  var STROKE_WIDTH = 2 * RESOLUTION;
+  var GRID_SIZE = 8 * RESOLUTION;
+  var POINT_RADIUS = 1 * RESOLUTION;
+
+  var POINT_OFFSET_SEED = function POINT_OFFSET_SEED() {
+    var BASE_OFFSET = 1;
+    return -BASE_OFFSET + Math.random() * BASE_OFFSET * RESOLUTION;
+  };
+
+  var POINT_SPEED_SEED = function POINT_SPEED_SEED() {
+    var BASE_SPEED = 0.004;
+    return BASE_SPEED + Math.random() * BASE_SPEED * RESOLUTION;
+  };
+
+  // Core class
+
+  var MazeLogo = function () {
+    function MazeLogo($canvas, $logoImage) {
+      _classCallCheck(this, MazeLogo);
+
+      this.canvas = $canvas;
+      this.ctx = $canvas.getContext('2d');
+      this.logoImage = $logoImage;
+
+      this.width = $canvas.width = $logoImage.clientWidth * RESOLUTION;
+      this.height = $canvas.height = $logoImage.clientHeight * RESOLUTION;
+
+      this.ctx.fillStyle = LOGO_BG_COLOR;
+      this.ctx.strokeStyle = WRAP_BORDER_COLOR;
+
+      this.overlayOffset = 0;
+      this.overlaySpeed = OVERLAY_SPEED;
+
+      // Render Control
+      this.renderPointCount = 0;
+
+      // Status
+      this.overlayType = 'static'; // 'loop' | 'single' | 'static'
+
+      // Data
+      this.points = [];
+      this.generatePointLogo();
+    }
+
+    // Render each frame
+
+
+    _createClass(MazeLogo, [{
+      key: 'renderFrame',
+      value: function renderFrame() {
+        var _this = this;
+
+        var ctx = this.ctx,
+            width = this.width,
+            height = this.height,
+            points = this.points;
+
+
+        ctx.fillRect(0, 0, width, height);
+
+        points.map(function (point) {
+          return _this.drawPoint(point);
+        });
+
+        this.renderOverlay();
+      }
+
+      // Public API
+
+    }, {
+      key: 'updateOverlayType',
+      value: function updateOverlayType(type) {
+        this.overlayType = 'single';
+      }
+    }, {
+      key: 'randomPositiveNegitive',
+      value: function randomPositiveNegitive(value) {
+        return (Math.random() > 0.5 ? 1 : -1) * value;
+      }
+
+      // Update moving overlay
+
+    }, {
+      key: 'renderOverlay',
+      value: function renderOverlay() {
+        var canvas = this.canvas,
+            ctx = this.ctx,
+            logoImage = this.logoImage,
+            width = this.width,
+            overlayType = this.overlayType;
+
+
+        ctx.save();
+
+        ctx.fillStyle = OVERLAY_COLOR;
+        ctx.rect(0, 0, canvas.width, this.overlayOffset);
+        ctx.fill();
+
+        ctx.globalCompositeOperation = 'destination-in';
+        ctx.drawImage(logoImage, 0, 0, canvas.width, canvas.height);
+        ctx.globalCompositeOperation = 'source-over';
+
+        if (overlayType === 'static') {
+          return ctx.restore();
+        }
+
+        ctx.strokeStyle = OVERLAY_COLOR;
+        ctx.lineWidth = STROKE_WIDTH;
+        ctx.beginPath();
+        ctx.moveTo(0, this.overlayOffset);
+        ctx.lineTo(width, this.overlayOffset);
+        ctx.stroke();
+        this.overlayOffset += this.overlaySpeed;
+
+        if (this.overlayOffset > canvas.height || this.overlayOffset <= 0) {
+          if (overlayType === 'loop') {
+            this.overlaySpeed *= -1;
+          }
+        }
+
+        ctx.restore();
+      }
+
+      // Draw point
+
+    }, {
+      key: 'drawPoint',
+      value: function drawPoint(point) {
+        var ctx = this.ctx,
+            points = this.points;
+
+
+        var speed = point.speed;
+
+        point.x += point.dist * Math.sin(point.angle) * speed;
+        point.y += point.dist * Math.cos(point.angle) * speed;
+
+        point.angle += speed;
+
+        // Draw wall
+        // @OPTIMIZE: Reduce iteration times
+        points.map(function (point2) {
+          var dx = point2.x - point.x;
+          var dy = point2.y - point.y;
+          var dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist <= MAX_DIST) {
+            ctx.save();
+            ctx.lineWidth = WALL_WIDTH;
+            ctx.strokeStyle = LOGO_WALL_COLOR;
+            ctx.beginPath();
+            ctx.moveTo(point.x, point.y);
+            ctx.lineTo(point2.x, point2.y);
+            ctx.stroke();
+            ctx.restore();
+          }
+        });
+
+        ctx.save();
+        ctx.fillStyle = MAIN_COLOR;
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, POINT_RADIUS, 0, Math.PI * 2, true);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+      }
+    }, {
+      key: 'generatePointLogo',
+      value: function generatePointLogo() {
+        var canvas = this.canvas,
+            logoImage = this.logoImage,
+            points = this.points;
+
+
+        var tempCanvas = document.createElement('canvas');
+        var tempCtx = tempCanvas.getContext('2d');
+
+        tempCanvas.width = canvas.width;
+        tempCanvas.height = canvas.height;
+
+        tempCtx.drawImage(logoImage, 0, 0, canvas.width, canvas.height);
+
+        var idata = tempCtx.getImageData(0, 0, tempCanvas.width, tempCanvas.height);
+        var buffer32 = new Uint32Array(idata.data.buffer);
+        var gridX = GRID_SIZE;
+        var gridY = GRID_SIZE;
+
+        for (var y = 0; y <= tempCanvas.height; y += gridY) {
+          for (var x = 0; x <= tempCanvas.width; x += gridX) {
+            if (buffer32[y * tempCanvas.width + x]) {
+              var offset = POINT_OFFSET_SEED();
+              points.push({
+                x: x + offset,
+                y: y + offset,
+                angle: Math.random() * 360,
+                dist: BASE_DIST,
+                speed: POINT_SPEED_SEED()
+              });
+            }
+          }
+        }
+      }
+    }]);
+
+    return MazeLogo;
+  }();
+
+  // Define variables
+
+
+  var logoCanvas = document.querySelector('.logo-canvas');
+  var logoImage = document.querySelector('.logo-image');
+
+  // Init
+  var init = function init() {
+    var mazeLogo = new MazeLogo(logoCanvas, logoImage);
+    window.initLoading = mazeLogo;
+    window.LOADING_START_TIME = new Date().getTime();
+
+    var render = function render() {
+      window.requestAnimationFrame(render);
+      mazeLogo.renderFrame();
+    };
+
+    render();
+  };
+
+  // Run
+  document.addEventListener('DOMContentLoaded', function () {
+    init();
+  });
+})();</script><div class=app-container ontouchstart><script type=text/javascript src=http://sunebear.com/private/static/scripts/amazing.798ac51495041c4c7b96.js></script><script type=text/javascript src=http://sunebear.com/private/static/scripts/common.798ac51495041c4c7b96.js></script></body></html>
