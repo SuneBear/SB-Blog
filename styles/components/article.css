@@ -1,0 +1,14 @@
+.readable .article-title {
+  margin-bottom: 5px;
+}
+.readable .title-link {
+  text-decoration: none;
+}
+.meta {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.meta a.time {
+  color: #808080;
+  text-decoration: none;
+}

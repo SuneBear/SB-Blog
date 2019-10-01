@@ -211,10 +211,6 @@ body {
   font-size: 1.8em;
   margin: 0.67em 0;
 }
-.readable > h1 {
-  margin-top: 0;
-  font-size: 2em;
-}
 .readable h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
@@ -450,4 +446,50 @@ body {
   .readable blockquote blockquote {
     margin-left: 0;
   }
+}
+.readable .article-title {
+  margin-bottom: 5px;
+}
+.readable .title-link {
+  text-decoration: none;
+}
+.meta {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.meta a.time {
+  color: #808080;
+  text-decoration: none;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.site-header .name {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-indent: -9999px;
+  background-image: url("/images/icons/apple-touch-icon-180x180.png");
+  background-size: cover;
+  background-color: #eee;
+  -webkit-tap-highlight-color: transparent;
+}
+.page-post .name {
+  transform: rotate(45deg);
+}
+@media (max-width: 768px) {
+  .site-header {
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  .site-header .name {
+    width: 45px;
+    height: 45px;
+  }
+}
+.article-item {
+  margin-bottom: 50px;
 }
