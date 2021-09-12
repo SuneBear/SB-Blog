@@ -18,7 +18,7 @@ date: 2019-08-25
 
 时隔 4 年回过头看，我很享受低频社交的生活
 除了朋友会觉得我人间蒸发外，没有其他负面影响
-我利用这段时间构想了一个独立工作室 [Yet Another Hole](http://YetAnotherHole.com)
+我利用这段时间构想了一个独立工作室 ~~*[Yet Another Hole](https://github.com/YetAnotherHole)*~~
 从名字上可以看出我放弃了对宏大意义的追求
 更希望做出具像化的数字交互世界
 在创作过程中需要探索自然界的各种物质/生物/环境
